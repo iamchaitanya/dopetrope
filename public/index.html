@@ -1,12 +1,7 @@
 <!DOCTYPE HTML>
-<!--
-	Dopetrope by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
-		<title>Dopetrope by HTML5 UP</title>
+		<title>Pubg tournaments india</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -46,8 +41,9 @@
 									</ul>
 								</li> -->
 								<li><a href="#tournaments">Tournaments</a></li>
+								<li><a href="#specials">Specials</a></li>
 								<li><a href="#contact-us">Contact Us</a></li>
-								<li><a href="#">Account</a></li>
+								<li><a href="login.html">Login</a></li>
 							</ul>
 						</nav>
 
@@ -171,7 +167,7 @@
 												<section class="box">
 													<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
 													<header>
-														<h3 align="center">FRIDAY FASAK</h3>
+														<h3 align="center">FRIDAY FEROCITY</h3>
 													</header>
 													<p align="center">If you think you are bad , I'm your DAD, said a son to his daddy without worry</p>
 													<footer>
@@ -189,7 +185,7 @@
 							<div class="col-12">
 
 								<!-- Blog -->
-									<section>
+									<section id="specials">
 										<header class="major">
 											<h2>Specials</h2>
 										</header>
@@ -278,8 +274,8 @@
 									</header>
 									<a href="#" class="image featured"><img src="images/pic10.jpg" alt="" /></a>
 									<p>
-										This is <strong>PUBGODS</strong> a free, community driven e-sports initiative by
-										the selfless people here at  <a href="http://html5up.net/">pubGods</a> It's reason for coming into existence is to promote e-sports in india!
+										This is <strong>PUBGODS</strong> a free, community driven e-sports initiative helped by
+										the selfless people <a href="http://html5up.net/">here</a>. It's reason for coming into existence is to promote e-sports in india!
 									</p>
 									<footer>
 										<ul class="actions">
@@ -324,11 +320,11 @@
 										<h2>Reach/Contact Us</h2>
 									</header>
 									<ul class="social">
-										<li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
+										<li><a class="icon brands fa-facebook" href="#"><span class="label">Facebook</span></a></li>
 										<li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
-										<li><a class="icon brands fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
+										<li><a class="icon brands fa-instagram" href="#"><span class="label">Dribbble</span></a></li>
 										<li><a class="icon brands fa-tumblr" href="#"><span class="label">Tumblr</span></a></li>
-										<li><a class="icon brands fa-linkedin-in" href="#"><span class="label">LinkedIn</span></a></li>
+										<li><a class="icon brands fa-linkedin" href="#"><span class="label">LinkedIn</span></a></li>
 									</ul>
 									<ul class="contact">
 										<li>
@@ -366,6 +362,40 @@
 
 		</div>
 
+
+		<!-- firebase scripts -->
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+	 https://firebase.google.com/docs/web/setup#available-libraries -->
+	 <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+	 <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBS_OEqhCzZ9A40-XSF-S597gD8j0THrOQ",
+    authDomain: "pubgods-27d07.firebaseapp.com",
+    databaseURL: "https://pubgods-27d07.firebaseio.com",
+    projectId: "pubgods-27d07",
+    storageBucket: "pubgods-27d07.appspot.com",
+    messagingSenderId: "129794018771",
+    appId: "1:129794018771:web:c6cac44379ba4036cbf326",
+    measurementId: "G-4M9VVWQXRT"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+const db = firebase.firestore();
+const auth = firebase.auth();
+
+
+</script>
+
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
@@ -373,6 +403,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="auth.js"></script>
 
 	</body>
 </html>
