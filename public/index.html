@@ -116,7 +116,7 @@
 													<p align="center">The opportunity of defeating the enemy is provided by the enemy himself.</p>
 													<footer>
 														<ul class="actions">
-															<li><a href="#" class="button alt">Join Now</a></li>
+															<li><a  class="button alt">Join Now</a></li>
 														</ul>
 													</footer>
 												</section>
@@ -130,9 +130,25 @@
 													<p align="center">So in war, the way is to avoid what is strong, and strike at what is weak.</p>
 													<footer>
 														<ul class="actions">
-															<li><a href="#" class="button alt">Join Now</a></li>
+															<li><a  class="button alt" id="joinNowButtonTuesday"  onClick="display();">Join Now</a></li>
 														</ul>
 													</footer>
+													<div style="display:none;text-align:center;" id="tuesday">
+														<form class="form">
+															<!-- <h2>Is this awesome?</h2> -->
+															<div class="switch-field">
+																<input type="radio" id="radio-one" name="switch-one" value="8" checked/>
+																<label for="radio-one">8 PM</label>
+																<input type="radio" id="radio-two" name="switch-one" value="9" />
+																<label for="radio-two">9 PM</label>
+																<input type="radio" id="radio-three" name="switch-one" value="10" />
+																<label for="radio-three">10 PM</label>
+																<input type="radio" id="radio-four" name="switch-one" value="11" />
+																<label for="radio-four">11 PM</label>
+															</div>
+															<button id="okButtonTuesday" >ok</button id="okButton">
+														</form>
+													</div>
 												</section>
 											</div>
 											<div class="col-4 col-6-medium col-12-small">
@@ -144,7 +160,7 @@
 													<p align="center">He will win who knows when to fight and when not to fight the fight.</p>
 													<footer>
 														<ul class="actions">
-															<li><a href="#" class="button alt">Join Now</a></li>
+															<li><a class="button alt">Join Now</a></li>
 														</ul>
 													</footer>
 												</section>
@@ -158,7 +174,7 @@
 													<p align="center">The supreme art of war is to subdue the enemy without fighting.</p>
 													<footer>
 														<ul class="actions">
-															<li><a href="#" class="button alt">Join Now</a></li>
+															<li><a  class="button alt">Join Now</a></li>
 														</ul>
 													</footer>
 												</section>
@@ -172,7 +188,7 @@
 													<p align="center">If you think you are bad , I'm your DAD, said a son to his daddy without worry</p>
 													<footer>
 														<ul class="actions">
-															<li><a href="#" class="button alt">Join Now</a></li>
+															<li><a  class="button alt">Join Now</a></li>
 														</ul>
 													</footer>
 												</section>
@@ -201,7 +217,7 @@
 													<p align="center">Are you the outlaw?</p>
 													<footer>
 														<ul class="actions">
-															<li><a href="#" class="button icon solid">JOIN NOW</a></li>
+															<li><a class="button icon solid">JOIN NOW</a></li>
 														</ul>
 													</footer>
 												</section>
@@ -216,7 +232,7 @@
 													<p align="center">Are you the Saint?</p>
 													<footer>
 														<ul class="actions">
-															<li><a href="#" class="button icon solid ">JOIN NOW</a></li>
+															<li><a  class="button icon solid ">JOIN NOW</a></li>
 														</ul>
 													</footer>
 												</section>
@@ -404,6 +420,7 @@ const auth = firebase.auth();
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="auth.js"></script>
+			<script src="scriptone.js"></script>
 
 	</body>
 </html>

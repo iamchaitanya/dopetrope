@@ -1,10 +1,59 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-*{
-    font-family: 'Montserrat', sans-serif!important;
+* {
+  font-family: "Montserrat", sans-serif !important;
 }
 
+.switch-field {
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  justify-content: center;
+}
 
+.switch-field input {
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  width: 1px;
+  border: 0;
+  overflow: hidden;
+}
 
+.switch-field label {
+  background-color: #fff;
+  color: #2d96cd;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  padding: 8px 16px;
+  margin-right: -1px;
+  border: 1px solid #2d96cd;
+  transition: all 0.1s ease-in-out;
+}
+
+.switch-field label:hover {
+  cursor: pointer;
+}
+
+.switch-field input:checked + label {
+  background-color: #2d96cd;
+  color: #fff;
+  box-shadow: none;
+}
+
+.switch-field label:first-of-type {
+  border-radius: 50px 0 0 50px;
+}
+
+.switch-field label:last-of-type {
+  border-radius: 0 50px 50px 0;
+}
+
+#okButtonTuesday {
+  border-radius: 20%;
+  background-color: rgb(18, 219, 192);
+}
